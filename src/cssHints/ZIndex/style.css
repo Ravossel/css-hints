@@ -1,0 +1,32 @@
+.item {
+    border: 2px solid red;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+#item1{
+    position: relative;
+    background-color: skyblue;
+    top: 20px;
+    z-index: -1;
+}
+
+#item2 {
+    z-index: 5;
+    position: relative;
+    top: -20px;
+    background-color: rgb(215, 238, 14);
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+#item3 {
+    background-color: rgb(230, 50, 74);
+}
+
+#item4 {
+    background-color: rgb(7, 68, 92);
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Raleway', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* make the 1st letter to be capital*/
+    overflow: hidden;
+    /*clip off the extra text which is going out of the box*/
+    scroll-behavior: smooth;
+    /*when scrolling will happen it should have smooth effect*/
+}
+
+.header {
+    position: fixed;
+    /*it will make the menu fixed if you are scrolling down through the page*/
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: rgb(64, 160, 64); */
+    height: 65px;
+    z-index: 100;
+    /*header menu items should be always raised like a 3D view*/
+}
+
+.header .nav-bar {
+    display: flex;
+}
+
+.header .nav-bar .a {
+    flex: 1;
+    /*every anchor tag should take equal space in the whole row*/
+    text-align: center;
+    font-size: 22px;
+    line-height: 65px;
+    color: blue;
+}
+
+/* apply pseudo selector hover and change the brightness*/
+.header .nav-bar .a:hover {
+    filter: brightness(0.8);
+}
+
+/* apply different background color on each anchor menu item */
+.header .nav-bar .a:nth-child(1) {
+    background: #000;
+}
+
+.header .nav-bar .a:nth-child(2) {
+    background: #b30a0a;
+}
+
+.header .nav-bar .a:nth-child(3) {
+    background: #0dd41b;
+}
+
+.header .nav-bar .a:nth-child(4) {
+    background: #3513ca;
+}
+
+.header .nav-bar .a:nth-child(5) {
+    background: #cac113;
+}
+
+.container {
+    display: flex;
+    width: 500%;
+    height: 100vh;/*this will occupy visible screen height*/
+}
+
+.container .main-section {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container .main-section:nth-child(1){
+    background-color: red;
+}
+.container .main-section:nth-child(2){
+    background-color: green;
+}
+.container .main-section:nth-child(3){
+    background-color: yellow;
+}
+.container .main-section:nth-child(4){
+    background-color: blue;
+}
+.container .main-section:nth-child(5){
+    background-color: purple;
+}
+
+@media (max-width: 750px) {
+    .header .naav-bar .a .span {
+        display: none
+    }
+}

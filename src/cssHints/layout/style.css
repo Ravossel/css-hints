@@ -1,0 +1,27 @@
+.product {
+    height: 300px;
+    width: 250px;
+    background-color: aquamarine;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+#productThree {
+height: 300px;
+width: 250px;
+background-color: aquamarine;
+border-bottom: 4px solid brown;
+border-right: 4px solid green;
+border-bottom-right-radius: 20px;
+/* border-top-left-radius: 20px; */
+}
+
+#productFour{
+color: aliceblue;
+height: 1200px;
+width: 1200px;
+border: 2px solid brown;
+background-repeat: no-repeat;
+background-position: top left;
+background-image: url('https://www.state.gov/wp-content/uploads/2022/01/shutterstock_1486861028-scaled.jpg');
+}
